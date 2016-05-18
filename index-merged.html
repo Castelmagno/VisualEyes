@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Informatie visualisatie</title>
+    <script src="libs/d3.js"></script>
+    <script src="libs/jquery-1.12.0.min.js"></script>
+     <script src="libs/jquery-ui.js"></script>
+    <script src="libs/jQDateRangeSlider-min.js"></script>
+    <script src= "http://d3js.org/d3.v3.min.js"></script>
+    <script src="scripts/spiderview/parcoo.js"></script>
+    <script src="scripts/spiderview/arcs.js"></script>
+    <script src="scripts/spiderview/spidervis.js"></script>
+    <link href="style/style-arc.css" rel="stylesheet" type="text/css">
+    <link href="style/style-parcoo.css" rel="stylesheet" type="text/css">
+    <link href="style/style-spinneke.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="style/iThing.css" type="text/css" />
+
+  
+</head>
+<body>
+
+
+    <div id="upperhalf">
+        <div id="arc"></div>
+        <div id="legend"></div>
+    </div>
+    <div id="timeline"><div id="slider"></div></div>
+    <div id="parcooview">
+
+        <div id="left-div">
+            <div id="parcooTitle-div">
+                <h1 id="parcooHeading">Conflict Overview for country:</h1>
+            </div>
+            <button type="button" onclick="resetDiary()" class = "clearFilter">Clear Filters!</button>
+            <div id="parcoo-overview">
+
+            </div>
+        </div>
+        <div id="conflict-list">
+
+        </div>
+
+    </div>
+
+    <div id="conflict-overview">
+        <div id="anim-speed"></div>
+        <div id="spider-view"></div>
+    </div>
+
+    <input type="hidden" id="hiddenfield">
+    <input type="hidden" id="hiddenfield2">
+
+
+    <script>
+        var canvas = prepareCanvas();
+        drawParCoo(490,"Africa");
+        window.addEventListener('resize', function(event){
+            location.reload();
+        });
+
+        visualiseConflict(canvas, 145);
+        
+        //http://ghusse.github.io/jQRangeSlider/documentation.html
+        $("#slider").rangeSlider( {bounds:{min: 1945, max: 1990}, defaultValues:{min: 1945, max: 1990} } );
+
+        $( document ).ready(createLegend());
+
+        function createLegend(){
+            var names = Object.keys(contColahs);
+            var continentLegendData = [];
+            names.forEach(function(key){
+                continentLegendData.push({name: key, color: contColahs[key]});
+            });
+            var legendCanvas = d3.select("#legend").append("svg")
+                    .attr("id","legendcanvas")
+                    .attr("height", "100%")
+                    .attr("width", "100%");
+
+            var legend = legendCanvas.append("g")
+                    .attr("class","legend")
+                    .attr("transform","translate(10,100)")
+                    .style("font-size","20px");
+
+            legend.selectAll("rect")
+                    .data(continentLegendData)
+                    .enter()
+                    .append("rect")
+                    .attr("x", 0)
+                    .attr("y", function(d, i){
+                        return i*30;
+                    })
+                    .attr("width", 30)
+                    .attr("height", 20)
+                    .style("fill", function(d, i){
+                        return d.color;
+                    });
+
+            legend.selectAll("text")
+                    .data(continentLegendData)
+                    .enter()
+                    .append("text")
+                    .attr("x", 40)
+                    .attr("y", function(d, i){
+                        return 15 + i*30;
+                    })
+                    .text(function(d){
+                        return d.name;
+                    });
+            legend.append("text")
+                    .attr("x", 20)
+                    .attr("y", -25)
+                    .style("font-size", "35px")
+                    .style("font-weight", "bold")
+                    .text("Legend");
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+html,body{
+    width: 99%;
+    height: 98%;
+}
+
+div{
+    overflow: hidden;
+}
+
+#conflict-overview {
+    background-color: white;
+    float:left;
+    color: black;
+    height: 62%;
+    width: 29.5%;;
+    border-width: 2px;
+    border-style: solid;
+    border-width: 2px;
+    border-style: solid;
+    border-color:black;
+}
+
+#anim-speed{
+    height: 10%;
+    width: 100%;
+}
+
+#spider-view{
+    float: left;
+    border-top: 1px solid black;
+    height: 90%;
+    width: 100%;
+}
+
+#tooltip {
+    font-size: 10pt;
+    font-weight: 900;
+
+    fill: #000000;
+    stroke: #ffffff;
+    stroke-width: 0.25px;
+}
+
+.spiderlink{
+    stroke: black;
+}
+
+.bubblenode{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.bubblenode.fixed {
+    stroke-width: 2;
+    stroke: #73DCFF;
+}
+
+.bubbletext{
+    fill: white;
+}
+
+#speed-text{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.date-text{
+    font-size: 12px;
+    font-weight: bold;
+}

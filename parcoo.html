@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/style-parcoo.css" media="screen">
+    <script src="libs/d3.js"></script>
+    <script src="libs/jquery-1.12.0.min.js"></script>
+    <script src="scripts/spiderview/parcoo.js"></script>
+</head>
+<body>
+
+<div id="parcooview">
+
+   <div id="left-div">
+    <div id="parcooTitle-div">
+        <h1 id="parcooHeading">Conflict Overview for country:</h1>
+    </div>
+       <button type="button" onclick="resetDiary()" class = "clearFilter">Clear Filters!</button>
+    <div id="parcoo-overview">
+
+    </div>
+   </div>
+    <div id="conflict-list">
+
+    </div>
+
+    <div id="parcoo-timeline">
+        <label>country-comparison</label>
+    </div>
+</div>
+
+<script>
+
+drawParCoo(490);
+window.addEventListener('resize', function(event){
+    location.reload();
+});
+</script>
+</body>
+</html>

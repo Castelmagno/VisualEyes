@@ -1,0 +1,169 @@
+intervener: Intervener Country Code
+
+target: Target Country Code
+
+start: Starting Date
+	8 digits: yyyymmdd
+	
+end: End Date
+	8 digits: yyyymmdd
+
+source: Source of Intervention
+	1. 	Nation crossing border or demarcation line.                   
+    2.	Nation whose troops are already present in the country participating in the intervention.         
+    3.	Both 1 and 2                        
+    4.	International Organization.         
+    9.	Unclear (know troops are there but do not know if they were already there or if they crossed a border), or not ascertained.      
+
+direction: Direction of Intervener Supporting Action
+	0.	Non-supportive or neutral intervention
+    1.	Support government (including immediate restoration to abort coup)
+	2.	Oppose rebels or opposition groups
+	3.	Oppose government
+	4.	Support rebel or opposition groups
+	5.	Support or oppose 3rd party government
+	6.	Support or oppose rebel groups in sanctuary
+	9.	Not ascertained.    
+
+type: Troop Activity (outside bases-code highest level)
+	0.	None
+	1.	Evacuation of troops or personnel (any nationality) in context or dispute.
+	2.	Transport or negotiate-observe
+	3.	Patrol/guard/defend (SAMS)
+	4.	Intimidation
+	5.	Combat
+	9.	Not ascertained.
+
+amount: Amount of troop incursion
+	0.	None
+	1.	1-1,000
+	2.	1,001-5,000
+	3.	5,001-10,000
+	4.	10,000+
+	9.	Not ascertained
+	
+air: Air incursion type
+    0.	None
+	1.	Evacuation of troops or personnel
+	2.	Transport troops or personnel -supply/support
+	3.	Act of intimidation/air defense/patrol
+	4.	Bombing or strafing, firing (offense)
+	9.	Not ascertained. 
+
+naval: Naval incursion type
+	0.	None
+    1.	Evacuation of troops or personnel.
+    2.	Transport troops or launch forces inside territorial waters for combat or application of force 
+	3.	Laying or removing mines in territorial waters/commando raid
+    4.	Act of intimidation or patrol in territorial waters or disputed waters already occupied
+    5.	Shelling/firing
+    9.	Not ascertained.
+	
+size_naval: Size of Naval force employed
+    1.	Small forces (1-4 ships)
+	2.	Large force (5 or more ships)
+	9.	Not ascertained.
+
+firing_outside: Firing by intervener from outside the target
+	1.	No
+	2.	Yes
+	9.	No report; no information; not ascertained; not applicable.
+
+intervener_casualties: #Military Battle Casualties to Intervener (wounded + killed)
+	0.			None
+	XXX.		Exact number (at least)
+	998.		At least 998 casualties (exact number uncertain)
+    9999999.	Not ascertained 
+	
+target_casualties: #Military Battle Casualties to Target (wounded + killed)
+	0.			None
+	XXX.		Exact number (at least)
+	998.		At least 998 casualties (exact number uncertain)
+    9999999.	Not ascertained 
+
+domestic_dispute: Intervener takes side in a domestic dispute
+	0.	No
+	1.	Yes
+	9.	Not ascertained; not applicable
+	
+affect_policies: Affect Policies or Conditions in Target
+	0.	No
+	1.	Yes
+	9.	Not ascertained; not applicable
+	
+social_protective: Social Protective Intervention (e.g. to protect a socio-ethnic faction(s) or minority of the target country)
+	0.	No
+	1.	Yes
+	9.	Not ascertained; not applicable
+
+pursuit_border: Pursue Rebel or Terrorist Forces across Border or into Sanctuary
+	0.	No
+	1.	Yes
+	9.	Not ascertained; not applicable
+
+economic: Economic Protective Intervention (intervener attempts to protect economic or resource interests of self or others)
+	0.	No
+	1.	Yes
+	9.	Not ascertained; not applicable
+	
+strategic: Strategic Intervention (e.g., regional power balances, stability, or ideological issues mentioned by the intervener or clearly connected to the intervention)
+	0.	No
+	1.	Yes
+	9.	Not ascertained; not applicable
+
+humanitarian: Humanitarian Intervention (e.g., to save lives, relieve suffering, distribute foodstuffs to prevent starvation and so forth).
+	0.	No
+	1.	Yes
+	9.	Not ascertained; not applicable.
+
+territorial: Territorial Intervention (acquisition or retention of territory, delineation of frontiers, or specification of sovereign status)
+	0.	No
+	1.	Yes – intervention in established territory
+	2.	Yes – intervention in disputed territory under other state’s control
+	9.	Not ascertained; not applicable
+
+military/diplomatic: Intervention to Protect own Military and/or Diplomatic Interests and Property inside or outside the Target (e.g., military property; diplomats; diplomatic property)
+	0.	No
+	1.	Yes
+	9.	Not ascertained; not applicable
+
+contiguity: Are Intervener and Target Neighboring Contiguous Countries?
+	0.	No
+	1.	Yes
+	2.	Less than or Equal to 150 Miles of Water between borders
+	9.	Not ascertained; not applicable
+
+int_contig: Does Intervention Come from Neighboring Contiguous Country or Countries?
+	0.	No
+	1.	Yes
+	9.	Not ascertained; not applicable
+
+description: Description/Source of Intervention
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

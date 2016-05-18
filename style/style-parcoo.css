@@ -1,0 +1,187 @@
+html,body{
+    width: 99%;
+    height: 98%;
+}
+
+
+
+#parcooview {
+    float: left;
+    width: 70%;
+    height: 62%;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-color:black;
+}
+#left-div{
+    float: left;
+
+    height: 100%;
+    width: 75%;
+}
+
+#parcooTitle-div {
+    float: left;
+
+    height: 10%;
+    width: 80%;
+}
+
+#conflict-list {
+    float: left;
+    overflow:scroll;
+    height:100%;
+    width: 24%;
+
+    margin-left:11px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color:black;
+}
+#scrolldiv{
+    float:left;
+    overflow: scroll;
+    width:100%;
+    height:87%;
+    overflow-x:hidden;
+}
+#scrolltitle{
+    float:left;
+    width:100%;
+    height:5%;
+
+
+}
+
+#conflict-list::-webkit-scrollbar {
+    display: none;
+}
+
+#parcoo-overview {
+
+    float:left;
+    height: 100%;
+    width: 100%
+}
+
+#parcoo-timeline {
+
+    float: left;
+    height: 10%;
+    width: 100%;
+}
+
+
+svg {
+    font: 10px sans-serif;
+
+}
+
+.background path {
+    fill: none;
+    stroke: #ddd;
+    shape-rendering: crispEdges;
+}
+
+.foreground path {
+    fill: none;
+
+    stroke-width: 1.5;
+}
+
+.brush .extent {
+    fill-opacity: .3;
+    stroke: #fff;
+    shape-rendering: crispEdges;
+}
+
+.axis line,
+.axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+.foreground path:hover {
+    fill: none;
+
+    stroke-opacity: .7;
+    stroke-width: 4;
+
+}
+
+#parcoo-overview{
+
+    padding-top: 10px;
+
+}
+
+.parcoordSVG{
+    width:100%;
+    height:100%;
+}
+
+.tooltip{
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    white-space:pre;
+
+}
+
+table#voedingsdagboek {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#voedingsdagboek tr {
+    background-color: white;
+    border-top: 1px solid black;
+    padding-top: 5px;
+    padding-left:5px;
+
+}
+#voedingsdagboek tr:hover {
+
+}
+#voedingsdagboek td {
+
+    background-color: white;
+    width: 100%;
+    padding-top: 5px;
+    padding-left:5px;
+}
+#voedingsdagboek td:hover {
+    cursor: pointer;
+}
+
+.clearFilter{
+
+    margin: 20px 40px;
+
+    float:right;
+    font-weight:bold;
+    width:100px;
+    height:30px;
+
+    left:35%;
+}
+
+#timeline{
+    float:left;
+    width:100%;
+    height:50px;
+   
+}
