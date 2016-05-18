@@ -2,6 +2,11 @@
  * Created by Aragderp on 4/16/2016.
  */
 /* GLOBALS */
+/**
+Based on code from:
+http://bl.ocks.org/sjengle/5431779
+**/
+
 
 var width  = 1680;           // width of svg image
 var height = 320;           // height of svg image

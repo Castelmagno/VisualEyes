@@ -2,6 +2,11 @@
  * Created by Wander on 11/03/2016.
  */
 
+ /**
+ * Based on code from:
+ * http://bl.ocks.org/jasondavies/1341281
+ **/
+ 
 y = {};
 var foreground;
 function drawParCoo(CountryCode,continent){
