@@ -17,17 +17,17 @@ Parallel coordinates based on: http://bl.ocks.org/jasondavies/1341281
 
 Modules:
 ==========
-index.html includes the 3 seperate components which are the arc diagram, the parralel coordinate view and the node-link view.
+index.html includes the 3 seperate components which are the arc diagram, the Parallel coordinate view and the node-link view.
 The code for these components can be found in the folder scripts.
 
 -The script for the arc diagram is named arcs.js
--The script for the parralel coordinates view is named parcoo.js
+-The script for the parallel coordinates view is named parcoo.js
 -The script for the node-link view is named node.js
 
-The lay out is done using CSS3. The css files can be found in de style folder.
+The layout is done using CSS3. The css files can be found in de style folder.
 
 -The script for the arc diagram is named style-arcs.css
--The script for the parralel coordinates view is named style-parcoo.css
+-The script for the Parallel coordinates view is named style-parcoo.css
 -The script for the node-link view is named style-node.css
 
 Datafiles:
