@@ -146,60 +146,6 @@ function drawParCoo(CountryCode,continent){
 
                 }
 
-                //  Data,intervener,target,start,end,intervention,conflict,source,direction,type,amount,air,naval,size_naval,firing_outside,intervener_casualties,target casualties,colonial,pevious_int,alliance ,domestic_dispute,affect_policies,social_protective,pursuit_border,economic,strategic,humanitarian,territorial,military/diplomatic,contiguity,int_contig,alignment,power_inter,power_target,description
-
-                /*    Data
-                 :
-                 "mint"
-                 air
-                 :
-                 "4"
-                 alignment
-                 :
-                 "3"
-                 alliance
-                 :
-                 "0"
-                 amount
-                 :
-                 "3"
-                 colonial
-                 :
-                 "1"
-                 conflict
-                 :
-                 "145"
-                 domestic_dispute
-                 :
-                 "1"
-                 economic
-                 :
-                 "1"
-                 intervener
-                 :
-                 "211"
-                 intervener_casualties
-                 :
-                 "56"
-                 intervention
-                 :
-                 "381"
-                 pevious_int
-                 :
-                 "0"
-                 power_inter
-                 :
-                 "3"
-                 power_target
-                 :
-                 "1"
-                 target
-                 :
-                 "490"
-                 target casualties
-                 :
-                 "999"*/
-
 
 
                 for (i = 0; i < parcoo.length; i++) {
@@ -234,33 +180,6 @@ function drawParCoo(CountryCode,continent){
                     delete parcoo[i]["previous_int"];
 
 
-                    /*"": ""
-                     affect_policies: "0"
-                     air: "0"
-                     amount: "1"
-                     contiguity: "0"
-                     description: "S. Africa aids Unita opposition in Angola (GM"
-                     direction: "4"
-                     domestic_dispute: "1"
-                     economic: "0"
-                     end: "19890210"
-                     firing_outside: "0"
-                     humanitarian: "0"
-                     int_contig: "1"
-                     intervener: "560"
-                     intervener_casualties: "40"
-                     military/diplomatic: "0"
-                     naval: "0"
-                     pursuit_border: "0"
-                     size_naval: "9"
-                     social_protective: "0"
-                     source: "1"
-                     start: "19890208"
-                     strategic: "1"
-                     target: "540"
-                     target casualties: "23"
-                     territorial: "0"
-                     type: "5"*/
 
                 }
 
@@ -723,7 +642,7 @@ function drawParCoo(CountryCode,continent){
 
 
             var Table = document.createElement("table");
-            Table.id = 'voedingsdagboek';
+            Table.id = 'invasionlistid';
             var x;
             var y;
             var trID;
@@ -735,7 +654,7 @@ function drawParCoo(CountryCode,continent){
 
                 var clickHandler = function(myrow,n,mip){
                     return function(){
-                        jorenMethod(myrow,n,mip);};
+                        description_maker(myrow,n,mip);};
                 };
 
 
@@ -824,7 +743,7 @@ function resetDiary(){
 
 }
 var selected = "none";
-function jorenMethod(row,n,mip){
+function description_maker(row,n,mip){
 
 
 

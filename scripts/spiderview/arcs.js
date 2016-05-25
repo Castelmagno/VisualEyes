@@ -108,44 +108,6 @@ $( document ).ready(function() {
 
         updateLi();
 		 drawParCoo(cc, continentO);
-    /*    
-       d3.select("#plot").selectAll("ellipse")
-                                .attr("class", function(da,ia){
-                                     clicked = false;
-                                     clickedVars = [];
-                                     d3.selectAll("[f=tool]").remove();
-                                     
-                                    var result = "notHighlight";
-                                    
-                                    
-                                 
-                                    
-                                    if(da.start.slice(0,4) >=  Math.floor(data.values.min) && da.end.slice(0,4) <= Math.ceil(data.values.max)){
-                                       
-                                        result = "link";
-                                        
-                                        
-                                    }
-                                    else{
-                                        result = "hiddenLink";
-                                    }
-                                    
-                                    return result;
-                                });
-                                drawParCoo(cc, continentO);
-                          d3.select("#plot").selectAll(".node")
-                        .each(function(d,i){
-                            if(d.CountryCode == cc2 && cc2 != -1){
-                                mouseColor(d,i, this);
-                                clicked = true;
-                                clickedVars = [];
-                                clickedVars.push(d);
-                                clickedVars.push(i);
-                                clickedVars.push(this);
-
-                            }
-                          }); 
-        */
            
        });
        

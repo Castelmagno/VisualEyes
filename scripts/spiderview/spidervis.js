@@ -380,7 +380,7 @@ function visualiseConflict(canvas, conflictNumber){
                 while(force.alpha() > 0.05) { // You'll want to try out different, "small" values for this
                     force.tick();
                     if(safety++ > 500) {
-                        break;// Avoids infinite looping in case this solution was a bad idea
+                        break;
                     }
                 }
 
